@@ -17,7 +17,7 @@
       href="./apple-touch-icon.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>노을빛 여행 - 따뜻한 감성 여행 추천</title>
+    <title>마이페이지 - 노을빛 여행</title>
     <!-- 외부 CSS 파일 연결 -->
     <link rel="stylesheet" href="warm_style.css" />
   </head>
@@ -28,31 +28,35 @@
     </header>
 
     <nav>
-      <a href="#">홈</a>
-      <a href="index.html" class="active">홈</a>
+      <a href="index.html">홈</a>
       <a href="#">감성 숙소</a>
       <a href="#">노을 맛집</a>
       <a href="#">커뮤니티</a>
-      <a href="mypage.html">마이페이지</a>
+      <a href="mypage.html" class="active">마이페이지</a>
     </nav>
 
-    <section class="hero">
-      <h2>따스한 햇살이 머무는 곳으로</h2>
-      <p>인위적인 것들을 뒤로하고 자연의 속도에 맞춰 걷는 시간</p>
-      <br />
-      <a href="#" class="cta-button">여정 시작하기</a>
-    </section>
-
     <main class="container">
-      <article>
-        <h3>이달의 추천: "고요한 쉼표, 숲에서의 하루"</h3>
-        <p>
-          오래된 나무 향기가 배어있는 산장과 아침 안개가 자욱한 호숫가. 눈을
-          피로하게 만드는 화려한 조명 대신, 창가로 스며드는 은은한 채광만으로도
-          충분한 곳들을 선별했습니다.
-        </p>
-        <p>자연이 주는 가장 편안한 색감 속에서 진정한 휴식을 경험해 보세요.</p>
-      </article>
+      <!-- 프로필 섹션 -->
+      <section class="profile-card">
+        <div class="profile-info">
+          <h2>안녕하세요, 여행자님</h2>
+          <p>오늘도 당신의 여정에 따스한 햇살이 함께하기를 바랍니다.</p>
+          <button class="edit-button">프로필 수정</button>
+        </div>
+      </section>
+
+      <!-- 나의 여행 현황 -->
+      <section class="my-activity">
+
+        <article>
+          <h3>관심 있는 장소</h3>
+          <p>마음속에 담아둔 다음 목적지들입니다.</p>
+          <div class="wishlist-grid">
+            <div class="wish-item">담양 대나무 숲길</div>
+            <div class="wish-item">통영 일몰 전망대</div>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer>
