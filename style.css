@@ -1,0 +1,93 @@
+/* GMarketSans 폰트: 
+   기하학적인 형태와 일정한 선 굵기 덕분에 제목에 사용했을 때 
+   현대적이고 깔끔한 인상을 주어 사용자 시선을 끌기 좋습니다. */
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+/* Pretendard-Regular 폰트: 
+   Apple의 San Francisco나 Google의 Roboto와 유사한 높은 가독성을 가진 폰트입니다.
+   다양한 화면에서 글자가 뭉쳐 보이지 않아 본문에 가장 추천하는 폰트입니다. */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 전역 변수 설정: 색상과 폰트를 한곳에서 관리하여 일관성을 유지하고 수정을 쉽게 만듭니다. */
+:root {
+  --primary-color: #007bff;
+  --text-color: #333;
+  --bg-color: #f4f7f6;
+  --heading-font: "GMarketSans", sans-serif;
+  --body-font: "Pretendard-Regular", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 본문 가독성을 위해 Pretendard 적용 */
+  font-family: var(--body-font);
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  /* 디자인 포인트인 제목에는 GMarketSans 적용 */
+  font-family: var(--heading-font);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--heading-font); /* 버튼에도 포인트 폰트 적용 */
+}
